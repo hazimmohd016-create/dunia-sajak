@@ -1,0 +1,6 @@
+.claude/
+.DS_Store
+dist/
+_metadata.json
+package.json
+settings.local.json

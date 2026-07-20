@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DUNIA SAJAK — Aktiviti</title>
+<meta name="description" content="5 aktiviti interaktif sajak, daripada mudah ke sukar, bertema Super Mario.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=3">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍄</text></svg>">
+</head>
+<body>
+
+<div class="sky-decor" aria-hidden="true">
+  <div class="cloud c1"></div><div class="cloud c2"></div>
+  <div class="cloud c3"></div><div class="cloud c4"></div>
+</div>
+
+<div class="hud">
+  <span class="mario-mini">🍄 AJIM</span>
+  <span><span class="coin-mini"></span> x 08</span>
+  <span>DUNIA <span class="blink">1-6</span></span>
+  <span>AKTIVITI ★</span>
+  <span>TAHUN 4</span>
+</div>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html"><span class="logo-coin">S</span> DUNIA&nbsp;SAJAK</a>
+    <button class="nav-toggle" onclick="toggleNav()">☰ MENU</button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">🏠 Utama</a>
+      <a href="profil.html">👤 Profil</a>
+      <a href="objektif.html">🎯 Objektif</a>
+      <a href="set-induksi.html">🎬 Set Induksi</a>
+      <a href="sajak.html">📖 Sajak</a>
+      <a href="aktiviti.html">🎮 Aktiviti</a>
+      <a href="pentaksiran.html">📝 Pentaksiran</a>
+      <a href="rumusan.html">🏁 Rumusan</a>
+    </div>
+  </div>
+</nav>
+
+<main class="page">
+
+  <div class="title-wrap reveal">
+    <div class="section-title">ZON CABARAN</div>
+    <br><span class="section-sub">🎮 5 Aktiviti — Mudah ke Sukar!</span>
+  </div>
+
+  <section class="panel sky reveal">
+    <p style="margin:0">
+      🍄 <strong>Cara bermain:</strong> Tamatkan aktiviti mengikut urutan. Setiap
+      aktiviti bertambah sukar — seperti Ajim yang melalui <em>dunia</em> yang makin
+      mencabar! Kumpul syiling 🪙 dan bintang ⭐ sebanyak mungkin.
+    </p>
+    <div class="hero-scene" style="justify-content:center;gap:12px;margin-top:14px">
+      <a class="level-badge l1" href="#akt1" title="Pergi ke Aktiviti 1">LVL 1 · MUDAH</a>
+      <a class="level-badge l2" href="#akt2" title="Pergi ke Aktiviti 2">LVL 2 · SEDERHANA</a>
+      <a class="level-badge l3" href="#akt3" title="Pergi ke Aktiviti 3">LVL 3 · SEDERHANA+</a>
+      <a class="level-badge l4" href="#akt4" title="Pergi ke Aktiviti 4">LVL 4 · SUKAR</a>
+      <a class="level-badge l5" href="#akt5" title="Pergi ke Aktiviti 5">LVL 5 · PAKAR</a>
+    </div>
+    <p style="text-align:center;margin:10px 0 0;font-size:14.5px;font-weight:600">
+      👆 Klik mana-mana lencana untuk terus melompat ke aktiviti itu!
+    </p>
+  </section>
+
+  <!-- =================== AKTIVITI 1 =================== -->
+  <section class="activity-card reveal" id="akt1">
+    <div class="activity-head">
+      <span class="level-badge l1">LEVEL 1</span>
+      <h2 style="margin:0;color:var(--mario-red-d)">🪙 Aktiviti 1: Kutip Syiling Ilmu</h2>
+    </div>
+    <p><strong>Arahan:</strong> Pilih jawapan yang <strong>betul</strong>. Klik satu
+       pilihan sahaja bagi setiap soalan. Syiling akan berbunyi jika betul!</p>
+
+    <!-- Soalan 1 -->
+    <div class="q-item">
+      <div class="q-text">1. Sajak ialah sejenis puisi ______.</div>
+      <div class="opt-row">
+        <button class="opt" data-correct="1">Moden</button>
+        <button class="opt">Lama</button>
+        <button class="opt">Tradisional</button>
+      </div>
+      <div class="feedback" data-ok="Sajak ialah puisi moden." data-no="Sajak ialah puisi MODEN, bukan puisi lama."></div>
+    </div>
+
+    <!-- Soalan 2 -->
+    <div class="q-item">
+      <div class="q-text">2. Antara berikut, yang manakah <em>ciri</em> sajak?</div>
+      <div class="opt-row">
+        <button class="opt">Mesti ada 4 baris</button>
+        <button class="opt" data-correct="1">Tidak terikat bilangan baris</button>
+        <button class="opt">Mesti berima a-b-a-b</button>
+      </div>
+      <div class="feedback" data-ok="Sajak bebas — tidak terikat bilangan baris atau rima." data-no="Sajak TIDAK terikat pada bilangan baris atau rima tetap."></div>
+    </div>
+
+    <!-- Soalan 3 -->
+    <div class="q-item">
+      <div class="q-text">3. “Idea utama yang ingin disampaikan penyair” dipanggil ______.</div>
+      <div class="opt-row">
+        <button class="opt" data-correct="1">Tema</button>
+        <button class="opt">Rangkap</button>
+        <button class="opt">Rima</button>
+      </div>
+      <div class="feedback" data-ok="Tema = idea utama sajak." data-no="Idea utama sajak dipanggil TEMA."></div>
+    </div>
+
+    <!-- Soalan 4 -->
+    <div class="q-item">
+      <div class="q-text">4. “Wajahnya berseri <strong>bagai</strong> bulan” ialah gaya bahasa ______.</div>
+      <div class="opt-row">
+        <button class="opt">Metafora</button>
+        <button class="opt" data-correct="1">Simile</button>
+        <button class="opt">Repetisi</button>
+      </div>
+      <div class="feedback" data-ok="Ada kata 'bagai' → Simile." data-no="Kerana menggunakan kata 'bagai', ia adalah SIMILE."></div>
+    </div>
+
+    <!-- Soalan 5 -->
+    <div class="q-item">
+      <div class="q-text">5. Kumpulan beberapa baris dalam sajak dipanggil ______.</div>
+      <div class="opt-row">
+        <button class="opt">Tajuk</button>
+        <button class="opt">Baris</button>
+        <button class="opt" data-correct="1">Rangkap</button>
+      </div>
+      <div class="feedback" data-ok="Kumpulan baris = Rangkap." data-no="Kumpulan beberapa baris dipanggil RANGKAP."></div>
+    </div>
+
+    <div class="scoreboard" id="score1"></div>
+  </section>
+
+  <!-- =================== AKTIVITI 2 =================== -->
+  <section class="activity-card reveal" id="akt2">
+    <div class="activity-head">
+      <span class="level-badge l2">LEVEL 2</span>
+      <h2 style="margin:0;color:var(--mario-red-d)">⭐ Aktiviti 2: Padankan Gaya Bahasa</h2>
+    </div>
+    <p><strong>Arahan:</strong> <em>Seret</em> (drag) setiap “blok gaya bahasa” ke dalam
+       kotak contoh yang betul. <span class="pill">📱 Guna telefon?</span> Cukup
+       <strong>ketik</strong> blok, kemudian <strong>ketik</strong> kotak sasaran.</p>
+
+    <!-- Bank chip -->
+    <h3 style="color:var(--pipe-d)">🧱 Blok Gaya Bahasa</h3>
+    <div id="chipBank" class="opt-row" style="gap:10px;margin-bottom:10px">
+      <div class="chip" data-key="simile">🔵 Simile</div>
+      <div class="chip" data-key="metafora">🟣 Metafora</div>
+      <div class="chip" data-key="personifikasi">🟢 Personifikasi</div>
+      <div class="chip" data-key="repetisi">🟠 Repetisi</div>
+    </div>
+
+    <!-- Zon jatuh -->
+    <div class="match-wrap">
+      <div class="drop-zone" data-answer="simile">
+        <span class="zone-label">“Wajahnya bersinar <em>bagai</em> mentari.”</span>
+        Letak blok di sini…
+      </div>
+      <div class="drop-zone" data-answer="personifikasi">
+        <span class="zone-label">“Ombak <em>menari-nari</em> di tepi pantai.”</span>
+        Letak blok di sini…
+      </div>
+      <div class="drop-zone" data-answer="metafora">
+        <span class="zone-label">“Dia <em>permata hatiku</em> yang tercinta.”</span>
+        Letak blok di sini…
+      </div>
+      <div class="drop-zone" data-answer="repetisi">
+        <span class="zone-label">“Berjuang, <em>berjuang, berjuang</em> tanpa henti!”</span>
+        Letak blok di sini…
+      </div>
+    </div>
+
+    <div class="btn-row" style="justify-content:flex-start;margin-top:16px">
+      <button class="btn green" id="checkAkt2">✅ Semak Jawapan</button>
+      <button class="btn gold" id="resetAkt2">🔄 Cuba Semula</button>
+    </div>
+
+    <div class="scoreboard" id="score2"></div>
+  </section>
+
+  <!-- =================== AKTIVITI 3, 4, 5 (RUANG LINK) =================== -->
+  <div class="title-wrap reveal" style="margin-top:34px">
+    <div class="section-title" style="font-size:clamp(13px,3vw,20px)">CABARAN LANJUTAN</div>
+    <br><span class="section-sub">⚔️ Aktiviti 3 · 4 · 5 — Makin Sukar, Makin Seronok!</span>
+  </div>
+
+  <!-- AKTIVITI 3 -->
+  <section class="activity-card reveal" id="akt3">
+    <div class="activity-head">
+      <span class="level-badge l3">LEVEL 3</span>
+      <h2 style="margin:0;color:var(--mario-red-d)">🔎 Aktiviti 3: Detektif Sajak</h2>
+    </div>
+    <p><strong>Arahan:</strong> Jadilah <em>detektif bahasa</em>! Baca sajak pendek di bawah
+       dengan teliti, kemudian jawab <strong>5 soalan analisis</strong>. Setiap petikan
+       menyimpan bukti tersembunyi — cari dan buktikan! 🕵️</p>
+
+    <div class="poem-box">
+      <div class="poem-title">SAHABAT SEJATI</div>
+      Sahabatku umpama pelangi,<br>
+      Mewarnai hari-hari sepiku,<br>
+      Tika ku rebah dia menghulur tangan,<br>
+      Bangkit bersama mengejar mentari.<br><br>
+      Tawamu ubat paling mujarab,<br>
+      Menghapus duka di hati kecilku,<br>
+      Berjanji kita takkan berpisah,<br>
+      Bersama, <em>bersama</em> hingga hujung usia.
+    </div>
+
+    <!-- Soalan 1 -->
+    <div class="q-item" style="margin-top:18px">
+      <div class="q-text">1. Apakah <strong>tema</strong> sajak “Sahabat Sejati”?</div>
+      <div class="opt-row">
+        <button class="opt">Alam sekitar</button>
+        <button class="opt" data-correct="1">Persahabatan</button>
+        <button class="opt">Patriotisme</button>
+      </div>
+      <div class="feedback" data-ok="Keseluruhan sajak bercerita tentang sahabat — temanya PERSAHABATAN." data-no="Lihat tajuk & isi — semuanya tentang sahabat, jadi temanya PERSAHABATAN."></div>
+    </div>
+
+    <!-- Soalan 2 -->
+    <div class="q-item">
+      <div class="q-text">2. “Sahabatku <strong>umpama</strong> pelangi” menggunakan gaya bahasa…</div>
+      <div class="opt-row">
+        <button class="opt">Personifikasi</button>
+        <button class="opt">Metafora</button>
+        <button class="opt" data-correct="1">Simile</button>
+      </div>
+      <div class="feedback" data-ok="Kata 'umpama' = perbandingan → SIMILE." data-no="Ada kata perbandingan 'umpama' — itu tanda SIMILE, bukan metafora."></div>
+    </div>
+
+    <!-- Soalan 3 -->
+    <div class="q-item">
+      <div class="q-text">3. “Tawamu <strong>ubat</strong> paling mujarab” pula ialah…</div>
+      <div class="opt-row">
+        <button class="opt" data-correct="1">Metafora</button>
+        <button class="opt">Simile</button>
+        <button class="opt">Repetisi</button>
+      </div>
+      <div class="feedback" data-ok="Tawa dibandingkan dengan ubat TANPA kata perbandingan → METAFORA." data-no="Tiada kata 'bagai/umpama' di sini — perbandingan terus = METAFORA."></div>
+    </div>
+
+    <!-- Soalan 4 -->
+    <div class="q-item">
+      <div class="q-text">4. Baris “Tika ku rebah dia menghulur tangan” membawa <strong>maksud tersirat</strong>…</div>
+      <div class="opt-row">
+        <button class="opt">Sahabat suka bersalaman</button>
+        <button class="opt" data-correct="1">Sahabat membantu ketika kita susah</button>
+        <button class="opt">Sahabat pandai bermain tangan</button>
+      </div>
+      <div class="feedback" data-ok="'Rebah' = kesusahan; 'menghulur tangan' = memberi bantuan." data-no="Fikirkan maksud kiasan: 'rebah' ialah saat susah, 'menghulur tangan' ialah MEMBANTU."></div>
+    </div>
+
+    <!-- Soalan 5 -->
+    <div class="q-item">
+      <div class="q-text">5. Perkataan “<strong>bersama, bersama</strong>” di baris akhir ialah gaya bahasa ______ dan pengajarannya ialah…</div>
+      <div class="opt-row" style="flex-direction:column;align-items:stretch">
+        <button class="opt" data-correct="1">Repetisi — kita hendaklah setia kepada sahabat dalam susah dan senang.</button>
+        <button class="opt">Simile — kita perlu mencari ramai kawan baharu setiap hari.</button>
+        <button class="opt">Personifikasi — kita mesti berpisah dengan sahabat.</button>
+      </div>
+      <div class="feedback" data-ok="Pengulangan 'bersama' menegaskan kesetiaan sahabat sejati." data-no="Perkataan diulang untuk penegasan = REPETISI; mesejnya kesetiaan bersahabat."></div>
+    </div>
+
+    <div class="scoreboard" id="score3"></div>
+  </section>
+
+  <!-- AKTIVITI 4 -->
+  <section class="activity-card reveal" id="akt4">
+    <div class="activity-head">
+      <span class="level-badge l4">LEVEL 4</span>
+      <h2 style="margin:0;color:var(--mario-red-d)">🚀 Aktiviti 4: Arked Kuiz Wayground I</h2>
+    </div>
+    <p><strong>Masuk ke mesin arked!</strong> 🕹️ Jawab kuiz interaktif di bawah —
+       laju dan tepat! Kumpul mata setinggi mungkin dan cabar rakan sekelas kamu.</p>
+
+    <div class="quiz-embed">
+      <span class="arcade-label">🕹️ WAYGROUND ARCADE · STAGE 1</span>
+      <iframe src="https://wayground.com/embed/quiz/6a55d8f1f456f6de9cdeee7b"
+              title="Kuiz Wayground 1 — Sajak"
+              allow="fullscreen" allowfullscreen loading="eager"></iframe>
+    </div>
+    <div class="btn-row" style="justify-content:flex-start;margin-top:14px">
+      <a class="btn blue" href="https://wayground.com/embed/quiz/6a55d8f1f456f6de9cdeee7b"
+         target="_blank" rel="noopener">🖥️ Buka Skrin Penuh</a>
+    </div>
+  </section>
+
+  <!-- AKTIVITI 5 -->
+  <section class="activity-card reveal" id="akt5">
+    <div class="activity-head">
+      <span class="level-badge l5">LEVEL 5</span>
+      <h2 style="margin:0;color:var(--mario-red-d)">🏆 Aktiviti 5: Pertandingan Akhir Wayground II</h2>
+    </div>
+    <p><strong>Cabaran BOS terakhir zon ini!</strong> 👑 Level PAKAR — hanya wira sajak
+       sejati mampu mendapat markah penuh. Tunjukkan segala ilmu yang telah kamu kumpul!</p>
+
+    <div class="quiz-embed">
+      <span class="arcade-label">🕹️ WAYGROUND ARCADE · FINAL STAGE</span>
+      <iframe src="https://wayground.com/embed/quiz/6a55de0ff870951dc14bcaf7"
+              title="Kuiz Wayground 2 — Sajak (Pakar)"
+              allow="fullscreen" allowfullscreen loading="eager"></iframe>
+    </div>
+    <div class="btn-row" style="justify-content:flex-start;margin-top:14px">
+      <a class="btn blue" href="https://wayground.com/embed/quiz/6a55de0ff870951dc14bcaf7"
+         target="_blank" rel="noopener">🖥️ Buka Skrin Penuh</a>
+    </div>
+  </section>
+
+  <div class="btn-row reveal">
+    <a class="btn green" href="pentaksiran.html">📝 Seterusnya: Pentaksiran ▶</a>
+    <a class="btn gold" href="sajak.html">◀ Kembali: Nota Sajak</a>
+  </div>
+
+</main>
+
+<div class="ground-strip" aria-hidden="true"></div>
+
+<footer class="footer">
+  <div class="foot-mini">★ DUNIA 1-6 · AKTIVITI ★</div>
+  <p>© 2026 DUNIA SAJAK — Muhammad Hazim Bin Mohamad · GKEB 1072</p>
+</footer>
+
+<script src="main.js?v=3"></script>
+<script src="aktiviti.js?v=3"></script>
+</body>
+</html>

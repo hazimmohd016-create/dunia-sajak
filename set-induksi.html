@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DUNIA SAJAK — Set Induksi</title>
+<meta name="description" content="Set induksi bertema Super Mario untuk memulakan pembelajaran Sajak.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=3">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍄</text></svg>">
+</head>
+<body>
+
+<div class="sky-decor" aria-hidden="true">
+  <div class="cloud c1"></div><div class="cloud c2"></div>
+  <div class="cloud c3"></div><div class="cloud c4"></div>
+</div>
+
+<div class="hud">
+  <span class="mario-mini">🍄 AJIM</span>
+  <span><span class="coin-mini"></span> x 08</span>
+  <span>DUNIA <span class="blink">1-4</span></span>
+  <span>SET INDUKSI ★</span>
+  <span>TAHUN 4</span>
+</div>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html"><span class="logo-coin">S</span> DUNIA&nbsp;SAJAK</a>
+    <button class="nav-toggle" onclick="toggleNav()">☰ MENU</button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">🏠 Utama</a>
+      <a href="profil.html">👤 Profil</a>
+      <a href="objektif.html">🎯 Objektif</a>
+      <a href="set-induksi.html">🎬 Set Induksi</a>
+      <a href="sajak.html">📖 Sajak</a>
+      <a href="aktiviti.html">🎮 Aktiviti</a>
+      <a href="pentaksiran.html">📝 Pentaksiran</a>
+      <a href="rumusan.html">🏁 Rumusan</a>
+    </div>
+  </div>
+</nav>
+
+<main class="page">
+
+  <div class="title-wrap reveal">
+    <div class="section-title">PRESS START!</div>
+    <br><span class="section-sub">🎬 Set Induksi — Jom Bermula!</span>
+  </div>
+
+  <!-- DIALOG MARIO -->
+  <section class="dialogue reveal" aria-label="Mesej Mario">
+    <span class="dlg-name">AJIM</span>
+    <p class="typewriter" data-text="Wahoo! Sebelum kita mula, tonton video di bawah dan fikirkan... apakah rahsia yang membuatkan sebuah sajak begitu indah?"></p>
+  </section>
+
+  <!-- CERITA PEMBUKA -->
+  <section class="panel reveal">
+    <h2>🍄 Ajim Menemui Blok Ajaib!</h2>
+    <p>
+      Pada suatu hari, Mario sedang mengembara di <em>World Bahasa</em>. Tiba-tiba,
+      dia terlihat sebuah <strong>blok soal (?)</strong> berkilauan di udara! Dengan
+      penuh semangat, Mario melompat dan… <strong>PLING!</strong> 🪙 keluarlah sekeping
+      kertas bertulis sebuah <strong>SAJAK</strong> yang indah.
+    </p>
+    <p>
+      Mario membaca sajak itu dan berasa hairan — “Mengapa perkataan-perkataan ini
+      begitu indah dan menyentuh hati? Apakah rahsia di sebaliknya?” 🤔
+    </p>
+    <div class="callout warn">
+      🎯 <strong>Hari ini, kamulah Mario!</strong> Mari kita buka setiap blok ilmu
+      untuk mencungkil rahsia keindahan sajak. Bersedia? <strong>PRESS START!</strong>
+    </div>
+  </section>
+
+  <!-- RUANG VIDEO -->
+  <section class="panel tan reveal">
+    <h2>📺 Tonton Dahulu, Wira!</h2>
+    <p>Saksikan video pengenalan sajak di bawah sebelum kita mula mengembara:</p>
+
+    <div class="video-frame">
+      <span class="tv-label">📺 SAJAK TV · SIARAN KHAS</span>
+      <div class="ratio">
+        <iframe src="https://www.youtube.com/embed/P67wqpOHOkE"
+                title="Video Set Induksi — Sajak"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+      </div>
+    </div>
+    <p class="video-cap">🎬 “Rahsia Keindahan Sebuah Sajak”</p>
+  </section>
+
+  <!-- SOALAN CUNGKIL MINDA -->
+  <section class="panel sky reveal">
+    <h2>💭 Soalan Cungkil Minda</h2>
+    <p>Sebelum kita masuk ke <em>world</em> seterusnya, fikirkan soalan-soalan ini
+       bersama rakan kamu:</p>
+    <ul class="tick-list stars">
+      <li>Apakah perasaan yang kamu rasa selepas menonton video tadi?</li>
+      <li>Pernahkah kamu membaca atau mendengar sebuah sajak? Tentang apa?</li>
+      <li>Mengapakah penyair suka menggunakan bahasa yang indah?</li>
+      <li>Jika kamu seorang penyair, sajak tentang apakah yang ingin kamu tulis?</li>
+    </ul>
+    <div class="callout tip">
+      🪙 <strong>Ganjaran:</strong> Setiap jawapan yang kamu kongsi akan menambah
+      “syiling ilmu” dalam simpanan kamu! Jangan malu untuk mencuba.
+    </div>
+  </section>
+
+  <!-- Adegan mini: kutip syiling sebelum meneruskan! -->
+  <section class="level-scene mini reveal" aria-hidden="true">
+    <div class="ls-cloud" style="top:20px; left:56px"></div>
+    <div class="ls-cloud" style="top:46px; right:90px; transform:scale(.7)"></div>
+    <div class="ls-hill" style="left:18px"></div>
+    <div class="ls-bush" style="left:240px"></div>
+    <div class="ls-blocks" style="left:200px; bottom:130px">
+      <span class="spr spr-qblock"></span>
+      <span class="spr spr-brick"></span>
+      <span class="spr spr-qblock"></span>
+    </div>
+    <span class="spr spr-coin ls-pop" style="left:256px; bottom:180px; width:32px; height:32px"></span>
+    <div class="ls-pipe" style="right:70px"></div>
+    <span class="spr spr-goomba ls-goomba"></span>
+    <div class="ls-ground"></div>
+  </section>
+
+  <div class="btn-row reveal">
+    <a class="btn green" href="sajak.html">📖 Seterusnya: Nota Sajak ▶</a>
+    <a class="btn gold" href="objektif.html">◀ Kembali: Objektif</a>
+  </div>
+
+</main>
+
+<div class="ground-strip" aria-hidden="true"></div>
+
+<footer class="footer">
+  <div class="foot-mini">★ DUNIA 1-4 · SET INDUKSI ★</div>
+  <p>© 2026 DUNIA SAJAK — Muhammad Hazim Bin Mohamad · GKEB 1072</p>
+</footer>
+
+<script src="main.js?v=3"></script>
+</body>
+</html>

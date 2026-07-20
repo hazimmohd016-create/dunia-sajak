@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DUNIA SAJAK — Laman Utama</title>
+<meta name="description" content="Laman pembelajaran interaktif Bahasa Melayu bertema Super Mario untuk topik Sajak (Tahun 4).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=3">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍄</text></svg>">
+</head>
+<body>
+
+<!-- Awan latar -->
+<div class="sky-decor" aria-hidden="true">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+  <div class="cloud c4"></div>
+</div>
+
+<!-- HUD Papan Skor -->
+<div class="hud">
+  <span class="mario-mini">🍄 AJIM</span>
+  <span><span class="coin-mini"></span> x 08</span>
+  <span>TAHAP <span class="blink">1-1</span></span>
+  <span>SAJAK ★</span>
+  <span>TAHUN 4</span>
+</div>
+
+<!-- Navigasi -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">
+      <span class="logo-coin">S</span> DUNIA&nbsp;SAJAK
+    </a>
+    <button class="nav-toggle" onclick="toggleNav()">☰ MENU</button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">🏠 Utama</a>
+      <a href="profil.html">👤 Profil</a>
+      <a href="objektif.html">🎯 Objektif</a>
+      <a href="set-induksi.html">🎬 Set Induksi</a>
+      <a href="sajak.html">📖 Sajak</a>
+      <a href="aktiviti.html">🎮 Aktiviti</a>
+      <a href="pentaksiran.html">📝 Pentaksiran</a>
+      <a href="rumusan.html">🏁 Rumusan</a>
+    </div>
+  </div>
+</nav>
+
+<main class="page">
+
+  <!-- HERO -->
+  <section class="hero reveal">
+    <h1 class="hero-title"><span class="red">DUNIA</span> <span class="green">SAJAK</span></h1>
+    <p class="hero-tag">Jom meneroka dunia sajak bersama Cikgu Hazim!</p>
+  </section>
+
+  <!-- ADEGAN LEVEL -->
+  <section class="level-scene reveal" aria-hidden="true">
+    <div class="ls-cloud" style="top:26px; left:60px"></div>
+    <div class="ls-cloud" style="top:52px; right:230px; transform:scale(.8)"></div>
+
+    <div class="ls-hill" style="left:24px"></div>
+    <div class="ls-bush" style="left:250px"></div>
+
+    <!-- blok terapung + mushroom pop -->
+    <div class="ls-blocks" style="left:150px; bottom:176px">
+      <span class="spr spr-qblock"></span>
+      <span class="spr spr-brick"></span>
+      <span class="spr spr-qblock"></span>
+    </div>
+    <span class="spr spr-mushroom ls-pop" style="left:150px; bottom:224px; width:40px; height:40px"></span>
+    <span class="spr spr-coin ls-pop" style="left:262px; bottom:230px; width:34px; height:34px; animation-delay:.5s"></span>
+
+    <!-- paip -->
+    <div class="ls-pipe" style="left:430px"></div>
+
+    <!-- goomba berjalan -->
+    <span class="spr spr-goomba ls-goomba"></span>
+
+    <!-- bendera + istana penamat -->
+    <div class="ls-flag" style="right:190px"></div>
+    <div class="ls-castle" style="right:24px"></div>
+
+    <div class="ls-ground"></div>
+  </section>
+
+  <!-- DIALOG MARIO -->
+  <section class="dialogue reveal" aria-label="Mesej Mario">
+    <span class="dlg-name">AJIM</span>
+    <p class="typewriter" data-text="It's-a me, AJIM! Selamat datang ke DUNIA SAJAK. Ketik blok ? di mana-mana untuk kumpul syiling, dan jom belajar sajak sampai STAGE CLEAR!"></p>
+  </section>
+
+  <!-- PENGENALAN -->
+  <section class="panel reveal">
+    <h2>🍄 Selamat Datang, Wira Bahasa!</h2>
+    <p>
+      Selamat datang ke <strong>DUNIA SAJAK</strong> — sebuah dunia pembelajaran
+      Bahasa Melayu yang penuh aksi! Di sini,
+      setiap murid Tahun 4 akan menjadi seorang <strong>wira bahasa</strong> yang
+      mengembara melalui pelbagai <em>“dunia”</em>, mengumpul syiling ilmu 🪙, dan
+      membuka <em>blok soal (?)</em> yang penuh dengan pengetahuan tentang <strong>SAJAK</strong>.
+    </p>
+    <p>
+      <strong>Sajak</strong> ialah puisi moden yang indah — tempat penyair meluahkan
+      perasaan, fikiran dan pengalaman. Sama seperti Ajim yang melompat mengejar
+      bintang ⭐, kita juga akan “melompat” dari satu pelajaran ke satu pelajaran
+      untuk menjadi juara sajak!
+    </p>
+
+    <div class="callout tip">
+      💡 <strong>Misi kamu:</strong> Kumpul semua ilmu tentang sajak, tamatkan
+      aktiviti, dan capai bendera kejayaan 🏁 di penghujung permainan!
+    </div>
+  </section>
+
+  <!-- PETA LEVEL -->
+  <div class="title-wrap reveal" style="margin-top:34px">
+    <div class="section-title">PETA TAHAP</div>
+  </div>
+
+  <section class="panel sky reveal">
+    <h2>🗺️ Pilih Dunia Kamu</h2>
+    <p style="margin-top:0">Ikut laluan dari <strong>Dunia 1</strong> hingga <strong>Dunia 8</strong>.
+       Bintang ⭐ menandakan dunia yang telah kamu lawati — cuba tamatkan semuanya!</p>
+    <ol class="world-map" id="worldMap">
+      <li><a href="index.html" data-page="index.html"><span class="wm-node">1</span><span class="wm-label">Utama</span></a></li>
+      <li><a href="profil.html" data-page="profil.html"><span class="wm-node">2</span><span class="wm-label">Profil</span></a></li>
+      <li><a href="objektif.html" data-page="objektif.html"><span class="wm-node">3</span><span class="wm-label">Objektif</span></a></li>
+      <li><a href="set-induksi.html" data-page="set-induksi.html"><span class="wm-node">4</span><span class="wm-label">Induksi</span></a></li>
+      <li><a href="sajak.html" data-page="sajak.html"><span class="wm-node">5</span><span class="wm-label">Nota Sajak</span></a></li>
+      <li><a href="aktiviti.html" data-page="aktiviti.html"><span class="wm-node">6</span><span class="wm-label">Aktiviti</span></a></li>
+      <li><a href="pentaksiran.html" data-page="pentaksiran.html"><span class="wm-node">7</span><span class="wm-label">Taksiran</span></a></li>
+      <li><a href="rumusan.html" data-page="rumusan.html"><span class="wm-node">8</span><span class="wm-label">Tamat 🏁</span></a></li>
+    </ol>
+  </section>
+
+  <!-- KENAPA SAJAK -->
+  <section class="panel tan reveal">
+    <h2>🌟 Mengapa Belajar Sajak?</h2>
+    <div class="grid g3">
+      <div class="info-card">
+        <div class="ic-icon">❤️</div>
+        <h4>Meluah Rasa</h4>
+        <p>Sajak mengajar kita menyampaikan perasaan dengan indah dan bermakna.</p>
+      </div>
+      <div class="info-card">
+        <div class="ic-icon">🧠</div>
+        <h4>Tajam Minda</h4>
+        <p>Menganalisis sajak melatih pemikiran kritis & kreatif (KBAT).</p>
+      </div>
+      <div class="info-card">
+        <div class="ic-icon">🗣️</div>
+        <h4>Bahasa Indah</h4>
+        <p>Kita belajar bahasa yang puitis, penuh gaya dan nilai murni.</p>
+      </div>
+    </div>
+    <div class="btn-row" style="margin-top:22px">
+      <a class="btn green" href="set-induksi.html">▶️ Mula Pengembaraan</a>
+      <a class="btn gold" href="sajak.html">📖 Terus ke Nota Sajak</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- Tanah bata -->
+<div class="ground-strip" aria-hidden="true"></div>
+
+<footer class="footer">
+  <div class="foot-mini">★ DUNIA 1-1 · DUNIA SAJAK ★</div>
+  <p>Dibina dengan ❤️ untuk pembelajaran Bahasa Melayu · Tema Permainan<br>
+  © 2026 DUNIA SAJAK — Muhammad Hazim Bin Mohamad 🍄</p>
+</footer>
+
+<script src="main.js?v=3"></script>
+</body>
+</html>
