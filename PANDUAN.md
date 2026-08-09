@@ -87,8 +87,7 @@ Laman ini fail statik (HTML/CSS/JS) — boleh dihoskan percuma di:
 
 ---
 
-© 2026 **DUNIA SAJAK** — Muhammad Hazim Bin Mohamad · GKEB 1072
-*Kemahiran Belajar · Encik Abdul Rahim Bin Roslie*
+© 2026 **DUNIA SAJAK** — Muhammad Hazim Bin Mohamad
 
 ---
 
